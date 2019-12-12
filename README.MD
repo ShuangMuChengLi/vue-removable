@@ -33,6 +33,12 @@ Vue.use(VueRemovable);
     >
       点击拖拽
     </div>
+    <div
+      v-removable
+      class="box3"
+    >
+      点击拖拽
+    </div>
   </div>
 </template>
 <script>
@@ -60,6 +66,11 @@ export default {
     position: absolute;
     top: 50px;
     left: 350px;
+  }
+  .box3{
+    border: 1px solid #333;
+    width: 100px;
+    height: 100px;
   }
 </style>
 

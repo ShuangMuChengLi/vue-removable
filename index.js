@@ -27,6 +27,8 @@ let directive = {
     }
     function mouseupFn(e){
       isMoving = false;
+      document.removeEventListener('mousemove', mousemoveFn);
+      document.removeEventListener('mouseup', mouseupFn);
     }
     function mousedownFn(e){
       startPosition = {
@@ -37,12 +39,15 @@ let directive = {
         top: el.offsetTop,
         left: el.offsetLeft
       };
-
+      let positionType = getComputedStyle(el).position;
+      if(positionType === 'static'){
+        el.style.position = 'absolute';
+      }
       isMoving = true;
       document.addEventListener('mousemove', mousemoveFn);
       document.addEventListener('mouseup', mouseupFn);
     }
-    keydownBtn.addEventListener('mousedown', mousedownFn );
+    keydownBtn.addEventListener('mousedown' ,mousedownFn );
 
   }
 };
