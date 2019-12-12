@@ -1,0 +1,12 @@
+{
+  "name": "vue-removable",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "This is a Vue.js's directive that let the html DOM can be move with mouse",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ShuangMuChengLi/vue-removable.git"
+  },
+  "homepage": "http://www.linchaoqun.com/",
+}

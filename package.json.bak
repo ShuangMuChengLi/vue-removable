@@ -1,0 +1,7 @@
+{
+  "name": "vue-removable",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Let the html DOM can be move with mouse",
+  "license": "MIT"
+}
