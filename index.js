@@ -53,10 +53,10 @@ let directive = {
 };
 
 const plugin = {
-  install(Vue) {
+  install: function(Vue) {
     Vue.directive('removable', directive);
   },
-  directive,
+  directive: directive
 };
 
 export default plugin;
